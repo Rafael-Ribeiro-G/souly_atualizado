@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Disco de Vinil The Beatles</title>
+        <link href="pop_produtos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" type="image/jpeg" href="soulyy.png">
+    </head>
+    <body>
+        <main>
+            <div>
+
+                <h1 id="nome-produto" class="titulo">TÍTULO</h1>
+                <div class="quadrado">
+                <img id="imagem-produto" src="toca_disco.png" class="imagem">
+                <p id="descricao-produtos" class="descricao">DESCRIÇÃO</p>
+                <p id="preco-produtos" class="preco">PREÇO</p>
+                </div>
+
+                <!--Captura as informações do produto-->
+                <script>
+                    function getParametro(dado){
+                        const urlParams =  new URLSearchParams(window.location.search);
+                        return urlParams.get(dado);
+                    }
+
+                    //Preenche na página as informações recebidas
+                    document.getElementById("nome-produto").textContent = getParametro("nome");
+                    document.getElementById("imagem-produto").src = getParametro("imagem");
+                    document.getElementById("descricao-produtos").textContent = getParametro("descricao");
+                    document.getElementById("preco-produtos").textContent = getParametro("preco");
+                </script>
+            </div>
+        </main>
+    </body>
+</html>

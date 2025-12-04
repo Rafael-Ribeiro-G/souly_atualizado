@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="encomendas.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="soulyy.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encomendas | Souly</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <!--Logo SPORTFY-->
+                <a href="index.html" self="blank">
+                    <img src="soulyy.png" title="Souly" class="logo"/>
+                </a>
+                <!--MENU-->
+                <nav class="itens">
+                    <ul>
+                        <!--ITENS DO MENU-->
+                        <a href="index.html">Home</a>
+                        <a href="indexcontato.html">Contato</a>
+                        <a href="indexprodutos.html">Produtos</a>
+                        <a href="indexencomendas.html"><strong>Encomendas</strong></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <ul class="encomendas-titulo">
+            <i class="fa-solid fa-envelope" style="color: #FF2427; font-size: 25px;">   Encomendas</i>   
+        </ul>
+
+        <section class="container">
+        <label for="filtrar-tabela" style="color: white; font-family: 'Tahoma'; font-size: 20px; margin-left: 38px;">Buscar:</label>
+            <input type="text" id="filtrar-tabela" class="filtrar-tabela" placeholder="Digite o cliente que deseja buscar" size="40">
+        <!--TABELA DE ENCOMENDAS-->
+        <table>
+            <!--CABEÇALHO DA TABELA-->
+            <thead>
+                <!--LINHA-->
+                <tr>
+                    <!--COLUNA DO CABEÇALHO DA TABELA-->
+                    <th>Nome</th>
+                    <th>Produtos</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitário</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody class="tabela-clientes">
+                <tr class="cliente" style="background-color: white;">
+                    <td class="nome">Carolina</td>
+                    <td class="produto">Disco de Vinil</td>
+                    <td class="qtde">2</td>
+                    <td class="unitario">25</td>
+                    <td class="total"></td>
+                </tr>
+                <tr class="cliente" style="background-color: white;">
+                    <td class="nome">Beatriz</td>
+                    <td class="produto">Tapete Souly</td>
+                    <td class="qtde">1</td>
+                    <td class="unitario">80</td>
+                    <td class="total"></td>
+                </tr> 
+                <tr class="cliente" style="background-color: white;">
+                    <td class="nome">Felipe</td>
+                    <td class="produto">Vitrola Toca Discos</td>
+                    <td class="qtde">1</td>
+                    <td class="unitario">120</td>
+                    <td class="total"></td>
+                </tr> 
+                <tr class="cliente" style="background-color: white;">
+                    <td class="nome">Luciene</td>
+                    <td class="produto">Disco de Vinil</td>
+                    <td class="qtde">6</td>
+                    <td class="unitario">50</td>
+                    <td class="total"></td>
+                </tr> 
+                <tr class="cliente" style="background-color: white;">
+                    <td class="nome">Manuela</td>
+                    <td class="produto">Tapete Souly</td>
+                    <td class="qtde">3</td>
+                    <td class="unitario">60</td>
+                    <td class="total"></td>
+                </tr> 
+                <tr class="cliente" style="background-color: white;">
+                    <td class="nome">Fabiano</td>
+                    <td class="produto">Disco de Vinil</td>
+                    <td class="qtde">4</td>
+                    <td class="unitario">100</td>
+                    <td class="total"></td>
+                </tr> 
+                <tr class="cliente" style="background-color: white;">
+                    <td class="nome">Nilza</td>
+                    <td class="produto">Vitrola Toca Discos</td>
+                    <td class="qtde">2</td>
+                    <td class="unitario">150</td>
+                    <td class="total"></td>
+                </tr> 
+            </tbody>
+        </table>
+        
+        <button id="api-encomenda" class="botao bto-principal">Buscar da API</button>
+
+        <main>
+                <ul class="contatos-titulos">
+                    <h1 class="contatos-item" style="color: #FF2427; font-size: 25px; font-family: Tahoma; text-decoration: none;"><i class="fa-solid fa-inbox"> Adicionar Encomenda</i></h1>
+                </ul>
+                <div id="formRetorno" class="divRetorno">
+                    
+                    <p id="textoRetorno" class="texto-contatos"></p>
+                </div>
+                <div id="formulario">
+                    <form id="frmContato">
+                        <fieldset>
+                            <label style="color: white; font-family: Tahoma;">Nome Completo:</label>
+                            <input type="text" id="sobrenome" name="" class="input-padrao">
+
+                            <label style="color: white; font-family: Tahoma;">Quantidade:</label>
+                            <input type="text" id="email" name="" class="input-padrao">
+
+                            <label style="color: white; font-family: Tahoma;">Produto:</label>
+                                <select id="produto">
+                                    <option>Selecione</option>
+                                    <option>Toca Discos Vitrola</option>
+                                    <option>Disco de Vinil</option>
+                                    <option>Tapete Souly</option>
+                                </select>
+                            <br>
+                            <br>
+                            <label style="color: white; font-family: Tahoma;">Valor Unitário: </label>
+                            <input cols="50" rows="" id="mensagem" class="input-padrao">
+
+                            <br>
+                            <br>
+                        </fieldset>
+
+                        <br>
+                        <input type="button" id="adicionar-encomenda" value="Enviar Encomenda" class="enviar">
+                    </form>
+                </div>
+            </main>
+        </section>
+        <script src="calculo.js"></script>
+        <script src="adicionar.js"></script>
+        <script src="remove_encomenda.js"></script>
+        <script src="buscar_encomenda.js"></script>
+        <script src="api_encomenda.js"></script>
+    </body>
+</html>

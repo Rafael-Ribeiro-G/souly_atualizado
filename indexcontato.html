@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="contato.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="soulyy.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato | Souly</title>
+    </head>
+        <body>
+            <header>
+                <div>
+                    <!--Logo SPORTFY-->
+                    <a href="index.html" self="blank">
+                        <img src="soulyy.png" title="Souly" class="logo"/>
+                    </a>
+                    <!--MENU-->
+                    <nav class="itens">
+                        <ul>
+                            <!--ITENS DO MENU-->
+                            <a href="index.html">Home</a>
+                            <a href="indexcontato.html"><strong>Contato</strong></a>
+                            <a href="indexprodutos.html">Produtos</a>
+                            <a href="indexencomendas.html">Encomendas</a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <ul class="contatos-titulos">
+                    <h1 class="contatos-item" style="color: white; font-family: Tahoma; text-decoration: none; font-size: 300%; margin-left: 17.5%;"> Contato</h1>
+                </ul>
+                <div id="formRetorno" class="divRetorno">
+                    
+                    <p id="textoRetorno" class="texto-contatos"></p>
+                </div>
+                <div id="formulario">
+                    <p class="texto-contatos">
+                        Será uma prazer te ajudar!
+                        <br><br>
+                        Você pode nos contatar pelo Instagram, Youtube, TikTok, X ou preenchendo o formulário abaixo.
+                    </p>
+                    <form id="frmContato">
+                        <fieldset>
+                            <legend style="color: white; font-family: Tahoma;">Dados Pessoais</legend>
+                            <label style="color: white; font-family: Tahoma;">*Nome e Sobrenome</label>
+                            <input type="text" id="sobrenome" name="" class="input-padrao" required>
+
+                            <label style="color: white; font-family: Tahoma;">E-mail</label>
+                            <input type="text" id="email" name="" class="input-padrao" placeholder="seuemail@domínio.com">
+
+                            <label style="color: white; font-family: Tahoma;">Telefone</label>
+                            <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                            <label style="color: white; font-family: Tahoma;">*Mensagem</label>
+                            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                            <label style="color: white; font-family: Tahoma;">Qual forma de contato é de sua prefrência?
+                                <br><br>
+                                <input type="radio" value="radio-mail" name="Contato">E-mail
+                                <br>
+                                <input type="radio" value="radio-zap" name="Contato">WhatsApp
+                            </label>
+
+                            <br>
+                            <label style="color: white; font-family: Tahoma;">Qual o motivo do seu Contato?
+                                <select>
+                                    <option>Selecione</option>
+                                    <option>Dúvida</option>
+                                    <option>Sugestão</option>
+                                    <option>Elogio</option>
+                                    <option>Reclamação</option>
+                                </select>
+                            </label>
+                            <br>
+                        </fieldset>
+
+                        <label style="color: white; font-family: Tahoma;"><input type="checkbox" class="chk"> Gostaria de receber nossas novidades e atualizações por e-mail?</label>
+
+                        <input type="submit" id="enviar" value="Enviar Formulário" class="enviar">
+                    </form>
+                </div>
+            </main>
+            <!--RODAPÉ-->
+                <footer>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/g.rafaelribeiro/"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff; margin-top: 20px; margin-right: 40px;"></i></a><a><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff; margin-left: 60px;"></i></a><a><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff; margin-left: 130px;"></i></a><a><i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff; margin-left: 190px;"></i></a><a><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff; margin-left: 250px;"></i></a><a><i class="fa-brands fa-whatsapp fa-xl" style="color: white; margin-left: 310px;"></i></a>
+                    </div>
+                </footer>
+                <script src="form.js"></script>
+        </body>
+</html>

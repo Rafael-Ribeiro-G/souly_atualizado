@@ -1,0 +1,141 @@
+/*É o tamanho das Imagens*/
+.logo{
+    width: 10%;
+    margin-left: 30px;
+}
+/*Estilizaçao do BODY do site*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma';
+    background-color: #260101;
+}
+/*Estilização da DIV do header*/
+.divHeader{
+    position: relative;
+    margin: auto;
+    padding-bottom: 75px;
+}
+/*Estilização do MENU do site*/
+nav{
+    position: absolute;
+    top: 22px;
+    right: 0px;
+}
+nav a{
+    display: inline;
+    color: white;
+    font-size: 20;
+    margin-right: 30;
+    text-decoration: none;
+}
+.itens {
+    margin-top: 14px;
+    margin-right: 400px;
+    font-size: 22px;
+}
+footer {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 100px 10px 10px 0;
+}
+footer p {
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    width: 200px;
+    position:absolute;
+}
+.instagram {
+    text-align: center;
+    margin-left: 50px;
+    width: 50px;
+}
+/*TÍTULOS*/
+.contatos-titulo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #260101;
+    font-family: cursive;
+    list-style: none;
+}
+.texto-contatos {
+    padding-left: 20%;
+    color: white;
+    font-family: Tahoma;
+    font-size: 100%;
+}
+/*Formulário*/
+form {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+fieldset {
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+.chk {
+    margin: 20px 0 ;
+    color: white;
+    font-family: Tahoma;
+}
+.enviar {
+    height: 10%;
+    margin-bottom: 20px;
+    background: #ffac27;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover {
+    background: rgb(192, 106, 0);
+    transform: scale(1.2);
+}
+/*DIV do retorno do formulário*/
+.divRetorno {
+    display: none;
+    margin-bottom: 15px;
+}
+.divRetorno p {
+    font-size: 24px;
+}
+.container4 {
+    display: flex;
+    gap: 30px;
+    margin-left: 190px;
+}
+.quadrado4 {
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    border-radius: 30px;
+    border: 5px solid #FF2427;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 80px;
+}
+.quadrado4:hover {
+    transform: scale(1.05);
+}
+/* RESPONSIVIDADE */
+@media(max-width: 768px) {
+  .divBannerTexto, .quadrado {
+    padding: 0 20px;
+    text-align: center;
+  }
+}

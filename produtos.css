@@ -1,0 +1,99 @@
+/*É o tamanho das Imagens*/
+.logo{
+    width: 10%;
+    margin-left: 30px;
+}
+/*Estilizaçao do BODY do site*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma';
+    background-color: #260101;
+}
+/*Estilização da DIV do header*/
+.divHeader{
+    position: relative;
+    margin: auto;
+    padding-bottom: 75px;
+}
+/*Estilização do MENU do site*/
+nav{
+    position: absolute;
+    top: 22px;
+    right: 0px;
+}
+nav a{
+    display: inline;
+    color: white;
+    font-size: 20;
+    margin-right: 30;
+    text-decoration: none;
+}
+.itens {
+    margin-top: 14px;
+    margin-right: 400px;
+    font-size: 22px;
+}
+footer {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 100px 10px 10px 0;
+}
+footer p {
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    width: 200px;
+    position:absolute;
+}
+.instagram {
+    text-align: center;
+    margin-left: 50px;
+    width: 50px;
+}
+/*Container dos cards*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+/*Estilização do card*/
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+/*Imagens*/
+.card img {
+    width: 47%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*Título*/
+.card h2 {
+    margin: 10px 0;
+}
+/*Preço*/
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 10px 0;
+}
+/* RESPONSIVIDADE */
+@media(max-width: 768px) {
+  .divBannerTexto, .quadrado {
+    padding: 0 20px;
+    text-align: center;
+  }
+}

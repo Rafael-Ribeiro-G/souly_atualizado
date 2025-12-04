@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="produtos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="soulyy.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos | Souly</title>
+        <script>
+            //POP-UP de detalhe do produto
+                function abrirDetalhes(nome, imagem, descricao, preco) {
+                const url = `indexpop-produtos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}&preco=${encodeURIComponent(preco)}`;
+                window.open(url, '_blank', "width=800,height=700"); 
+            }
+        </script>
+    </head>
+        <body>
+            <header>
+                <div>
+                    <!--Logo SPORTFY-->
+                    <a href="index.html" self="blank">
+                        <img src="soulyy.png" title="Souly" class="logo"/>
+                    </a>
+                    <!--MENU-->
+                    <nav class="itens">
+                        <ul>
+                            <!--ITENS DO MENU-->
+                            <a href="index.html">Home</a>
+                            <a href="indexcontato.html">Contato</a>
+                            <a href="indexprodutos.html"><strong>Produtos</strong></a>
+                            <a href="indexencomendas.html">Encomendas</a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="container">
+                <div class="card" onclick="abrirDetalhes('Vitrola Toca Discos','toca_disco.png','Este toca discos é perfeito para quem ama música na sua essência mais pura!','Por: R$2.100,00')">
+                    <img src="toca_disco.png" alt="Produto 1">
+                    <h2>Vitrola Toca Discos</h2>
+                    <p>Este toca discos é perfeito para quem ama música na sua essência mais pura!</p>
+                    <span class="preco">R$2.100,00</span>    
+                </div>
+                <div class="card" onclick="abrirDetalhes('Disco de Vinil Charlie Brown Jr.','disco1.png','Este disco é perfeito para pessoas que gostam das músicas da banda Charlie Brown Jr!','Por: R$230,00')">
+                    <img src="disco1.png" alt="Produto 1">
+                    <h2>Disco do Charlie Brown Jr.</h2>
+                    <p>Disco de vinil com as melhores músicas da banda Charlie Brown Jr.</p>
+                    <span class="preco">R$230,00</span>    
+                </div>
+                <div class="card" onclick="abrirDetalhes('Tapete Logo Souly','logo_imagem.png','Este é o tapete é perfeito para quem quer extender seus gostos por músicas para fora dos fones de ouvidos!','Por: R$120,00')">
+                    <img src="logo_imagem.png" alt="Produto 1">
+                    <h2>Tapete Logo Souly</h2>
+                    <p>Tapete da nossa marca Souly, perfeito para quem tammbém quer manter o estilo longe dos fones de ouvido.</p>
+                    <span class="preco">R$120,00</span>    
+                </div>
+            </div>
